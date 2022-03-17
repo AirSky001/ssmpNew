@@ -1,0 +1,21 @@
+server:
+  port: 80
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:///db2?serverTimeZone=UTC
+      username: root
+      password: abc123
+  main:
+    banner-mode: off #关闭springLogo
+#mybatis-plus:
+#  global-config:
+#    db-config:
+#      table-prefix: tb_
+
+#开启程序执行日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
